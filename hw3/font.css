@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'FiraSans-Black';
+  src: url(./FiraSans-Black.eot);
+  src: url(./FiraSans-Black.eot?#iefix) format('embedded-opentype'),
+       url(./FiraSans-Black.otf) format('otf'),
+       url(./FiraSans-Black.svg#FiraSans-Black) format('svg'),
+       url(./FiraSans-Black.woff2) format('woff2'),
+       url(./FiraSans-Black.woff) format('woff');
+}
