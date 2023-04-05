@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p><strong> Теги</strong>  dt,dl,dd предназначенны для создания списка определений. Каждый такой список начинается с контейнера &lt;dl&gt;, куда входит тег &lt;dt&gt; создающий термин и тег &lt;dd&gt; задающий определение этого термина. <br>
+  Например:</p>
+
+  <dl>
+    <dt>WebP</dt>
+     <dd>WebP —крайне полезный формат, ведь он даёт и производительность и возможности. В отличие от других форматов, WebP поддерживает сжатие как с потерями так и без, а также полупрозрачность и анимацию.</dd>
+    <dt>JPEG</dt>
+     <dd>JPEG - это сокращение от Joint Photographic Experts Group, которое представляет собой формат сжатия для растрового изображения, который в основном используется для сжатия с потерями. </dd>
+  </dl>
+
+  <p><strong>Элемент</strong> &lt;pre&gt; определяет блок предварительно форматированного текста. Такой текст отображается обычно моноширинным шрифтом и со всеми пробелами между словами.</p>
+  <pre>П р и в е т     м и р  </pre>
+
+  <p><strong>Тег</strong> &lt;code&gt; предназначен для отображения одной или нескольких строк текста, который представляет собой программный код.</p>
+  <p><code>
+    function checkParent (src, dest) {<Br>
+      while (src != null) {<Br>
+        if (src.tagName == dest) return src<Br>
+         src = src.parentElement<Br>
+      }<Br>
+      return null<Br>
+     }
+    </code></p>
+
+    <p><strong>Контейнер</strong> &lt;tt&gt; отображает текст моноширинным текстом. Этот тег относится к группе тегов физического форматирования.</p>
+    <tt>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fugit quis necessitatibus veritatis repudiandae consequatur odit, neque quisquam ratione veniam voluptatibus, dolore atque perspiciatis alias nemo blanditiis, a soluta eum.</tt>
+
+    <p><strong>Тег</strong> &lt;kbd&gt; используется для обозначения текста, который набирается на клавиатуре или для названия клавиш. </p>
+    <p>Для быстрого закрашивания выделенной области цветом переднего плана 
+      используйте комбинацию клавиш <kbd>&lt;Alt&gt;+&lt;Backspace&gt;</kbd> 
+      или <kbd>&lt;Alt&gt;+&lt;Delete&gt;</kbd>. 
+      Для закрашивания выделенной области фоновым цветом 
+      воспользуйтесь комбинацией 
+      <kbd>&lt;Ctrl&gt;+&lt;Backspace&gt;</kbd> или 
+      <kbd>&lt;Ctrl&gt;+&lt;Delete&gt;</kbd>.</p>
+    <p><strong>Тег</strong> &lt;var&gt; определяет переменную в компьютерной программе или в математическом выражении.</p>
+      <p>Значение x равно <var>5</var>.</p>
+      <p>Чтобы определить переменную в Python, используйте ключевое слово <var>var_name</var>.</p>
+    <p>Индексом по отношению к тексту называется смещение символов относительно базовой линии вверх или вниз. В зависимости от положительного или отрицательного значения, индекс называется, соответственно, верхним или нижним. Они активно применяются в математике, физике, химии и для обозначения единиц измерения. HTML предлагает два тега для создания индекса: &lt;sup&gt; — верхний индекс и &lt;sub&gt; — индекс нижний. </p>
+      <p>20м<sup>2</sup><br>
+      H<sub>2</sub>O<br>
+      X<sup>3</sup>+X<sup>2</sup>=1</p>
+    <p><strong>Тег</strong> &lt;blockquote&gt; предназначен для выделения длинных цитат внутри документа.Атрибут cite - адрес, который указывает на источник цитаты.</p>
+    <blockquote>
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+   sed diem nonummy nibh euismod tincidunt ut lacreet dolore magna aliguam erat 
+   volutpat. Ut wisis enim ad minim veniam, quis nostrud exerci tution ullamcorper 
+   suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  </blockquote>
+
+  <blockquote>
+    <p>По данным <cite>Times</cite>, шторм обрушится на район завтра.</p>
+</blockquote>
+<p><strong>Тег</strong> &lt;q&gt; используется для выделения в тексте цитат. Содержимое контейнера автоматически отображается в браузере в кавычках.Для изменения типа кавычек используется стилевое свойство quotes.</p>
+<p><strong></strong>Станислав Лец утверждал: <q>Чаще всего выход там, где был 
+    вход</q>.</p>
+    <p><strong>Тег</strong> &lt;ins&gt; предназначен для выделения текста, который был добавлен в новую версию документа. Подобное форматирование позволяет отследить, какие изменения в тексте документа были сделаны.Браузеры обычно помечают текст в контейнере &lt;ins&gt; как подчеркнутый.</p>
+<p><strong>Тег</strong> &lt;del&gt; используется для выделения текста, который был удален в новой версии документа. Браузеры обычно помечают текст в контейнере del как перечеркнутый.</p>
+<p>Заметим, что схожий результат с Netscape показывает и браузер 
+  Opera, но, как видно на рис. 1, в последующих версиях
+  <del>этот недостаток был устранен</del> <ins>подход разработчиков 
+  этого браузера был изменен</ins>.</p>
+  <p><strong>Тег</strong> &lt;address&gt; предназначен для указания контактной информации автора или владельца страницы. Это может быть физический адрес, электронная почта или номер телефона.</p>
+<address>
+  <p>Имя Фамилия</p>
+  <p>Адрес: Улица, город, почтовый индекс</p>
+  <p>Телефон: +7 (123) 456-78-90</p>
+  <p>Электронная почта: example@mail.com</p>
+</address>
+<p><strong>Элемент</strong> &lt;nobr&gt; (от англ. "no break" ‒ «без разрыва») выводит вложенный в него текст на одну строку без переносов. Без него текст выравнивается по левому краю окна браузера или родительского элемента. При этом браузер переводы строк расставляет автоматически, чтобы текст полностью поместился по ширине окна.</p>
+<nobr>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+    sed diem nonummy nibh euismod tincidunt ut lacreet dolore 
+    magna aliguam erat volutpat. Ut wisis enim ad minim veniam, 
+    quis nostrud exerci tution ullamcorper suscipit lobortis nisl 
+    ut aliquip ex ea commodo consequat.</nobr>
+<p><strong>Тег</strong> &lt;wbr&gt; указывает браузеру место, где допускается делать перенос строки в тексте, если этого требует ширина родительского элемента.</p>
+<p>метоксихлор<wbr>диэтиламино<wbr>метил<wbr>бутил<wbr>амино<wbr>акридин</p>
+
+</body>
+</html>
