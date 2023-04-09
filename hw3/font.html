@@ -6,8 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
-  <font color="#BruceWillis"> Привет это проверка</font>
-  <font color="#Candy"> Привет это проверка</font>
+<p>
+  <font color="#BruceWillis"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi fugiat consequuntur commodi, quisquam minus voluptatibus dolor iusto laborum rerum voluptas ducimus aspernatur quibusdam possimus totam labore blanditiis iste. Distinctio, perferendis.</font>
+  <p><font color="#Candy"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam incidunt tempore fugiat qui minima? Ullam nisi possimus tempore accusamus atque repellat non animi voluptatum rem laboriosam, sunt ratione explicabo dolores?</font></p>
+  <p>Если в атрибут тега передано некорректное значение, браузер не может понять что это за значение и пытается преобразовать его в шестнадцатеричный код с помощью алгоритма, где пропускаемые цифры распознаются как 0, некорректные символы распознаются как 0.</p>
+  <ul> <p>Если применить эти правила, то получим следующее:</p>
+    <li>Заменяем все неправильные шестнадцатеричные символы нулями 0, BruceWillis превращается в B00ce000000</li>
+    <li>“Добиваем” число нулями до количества знаков, делимого на 3 (11 -> 12), получаем B00ce0000000</li>
+    <li>Разбиваем на три группы, каждая из которых отвечает за одну компоненту RGB: (B00c, e000, 0000)</li>
+    <li>Обрезаем каждый из аргументов справа, оставляя 2 символа, и получаем результат:<span style="color:#B0e000"> #B0e000 </span> или он же rgb(176, 224, 0).</li>
+  </ul>
+  <p>Аналогично с #CANDY <span style="color:#CA0D00">#CA0D00</span>#CA0D00, rgb(202, 13, 0)</p>
+  <p>Так можно сделать с любым набором цифр и букв</p>
+  <p>Например такое значение браузер посчитает за цвет #586995003HGCNL395, так как преобразует его в понятный для себя формат</p>
+  <font color="#586995003HGCNL395"><strong> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio, esse laudantium itaque est quibusdam eius sunt maxime voluptate, debitis soluta minus perferendis ad facilis corporis odit ipsum. Reiciendis, tempore!</strong></font>
 </body>
 </html>
