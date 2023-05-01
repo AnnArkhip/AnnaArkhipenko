@@ -6,22 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-   div ~ img:hover:before{content: url('img/star1.png');
-      
-    }
+ .str{
+    display: inline-block;
+    background-image: url("img/star0.png");}
+
+.str:hover ~ .str:nth-child(1),
+.str:hover ~ .str:nth-child(-n+2),
+.str:hover ~ .str:nth-child(-n+3),
+.str:hover ~ .str:nth-child(-n+4),
+.str:hover ~ .str:nth-child(-n+5)
+ 
+{
+ 
+    background-image: url("img/star1.png");
+}
 
   </style>
 </head>
 <body>
- <div>
-  <img src="img/star0.png" >
-  <img src="img/star0.png">
-  <img src="img/star0.png">
-  <img src="img/star0.png">
-  <img src="img/star0.png">
- </div>
-    
-  
+<a>  
+  <img class="str" src="img/star0.png" >
+  <img class="str" src="img/star0.png">
+  <img class="str" src="img/star0.png">
+  <img class="str" src="img/star0.png">
+  <img class="str" src="img/star0.png">
+</a>
  
 </body>
 </html>

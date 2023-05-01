@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>*** unnamed text ***</title></head><body>
-<style>
+  <style>
+    table.CHESS
+    {
+      border-collapse: collapse;
+    }
+  
+    table td
+    {
+      width: 50px;
+      height: 50px;
+      border: solid gray 1px;
+    }
+    .CHESS tr:nth-child(odd) td:nth-child(even),
+    .CHESS tr:nth-child(even) td:nth-child(odd) {
+background: black;}
 
-  table.CHESS
-  {
-    border-collapse: collapse;
-  }
+.CHESS tr:nth-child(even) td:nth-child(even),
+.CHESS tr:nth-child(odd) td:nth-child(odd) 
+{background: white;}
 
-  table td
-  {
-    width: 50px;
-    height: 50px;
-    border: solid gray 1px;
-  }
-  tr:nth-child(even) td:nth-child(even)
-  {
-    background-color:black }
-    tr:nth-child(odd) td:nth-child(odd)
-  {
-    background-color:black }
-    tr:first-child
-  {
-     background-color: rgb(112, 209, 112);}
-  tr:last-child
-  {
-     background-color: rgb(112, 209, 112);}
-</style>
-
+.CHESS tr:first-child td:nth-child(even),
+.CHESS tr:first-child td:nth-child(odd),
+.CHESS tr:last-child td:nth-child(even),
+.CHESS tr:last-child td:nth-child(odd),
+.CHESS tr:nth-child(odd) td:first-of-type,
+.CHESS tr:nth-child(even) td:first-of-type,
+.CHESS tr:nth-child(odd) td:last-of-type,
+.CHESS tr:nth-child(even) td:last-of-type { width: 10px; height: 10px; background: lightgreen;}
+  </style>
 <table class='CHESS'>
 <tr>
   <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
