@@ -8,29 +8,29 @@
   <style>
  .str{
     display: inline-block;
-    background-image: url("img/star0.png");}
+    background-image: url("img/star0.png");
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    
+    }
+    
 
-.str:hover ~ .str:nth-child(1),
-.str:hover ~ .str:nth-child(-n+2),
-.str:hover ~ .str:nth-child(-n+3),
-.str:hover ~ .str:nth-child(-n+4),
-.str:hover ~ .str:nth-child(-n+5)
- 
-{
- 
-    background-image: url("img/star1.png");
+.str:hover{
+ background-image: url("img/star1.png");
 }
+
 
   </style>
 </head>
 <body>
-<a>  
-  <img class="str" src="img/star0.png" >
-  <img class="str" src="img/star0.png">
-  <img class="str" src="img/star0.png">
-  <img class="str" src="img/star0.png">
-  <img class="str" src="img/star0.png">
-</a>
+<div class="str1">  
+  <div class="str"></div>
+  <div class="str"></div>
+  <div class="str"></div>
+  <div class="str"></div>
+  <div class="str"></div>
+</div>
  
 </body>
 </html>
