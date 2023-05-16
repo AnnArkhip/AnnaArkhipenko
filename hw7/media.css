@@ -1,0 +1,11 @@
+@media print {
+      a::before{
+        content: 'ссылка '; 
+      }
+      a{
+        text-decoration: none;
+      }
+      a::after{
+        content:' на 'attr(href);
+      }
+}
