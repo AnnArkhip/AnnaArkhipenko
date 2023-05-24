@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="media_400.css">
+  <style>
+    @media all and (min-width:450px) {
+      .radio{
+        display: inline;
+      }
+    }
+  </style>
+</head>
+<body>
+  <form method="get" action="http://fe.it-academy.by/TestForm.php"><br>
+   
+  Для публикации вашей статьи заполните, пожалуйста, следующую форму:<br><br>
+  Название статьи:
+  <input type="text" name="name"><br>
+  Рубрика:
+  <select name="category">
+  <option value="1">Программирование</option>
+  <option value="2">Флористика</option>
+  <option value="3">География</option>
+  <option value="4">Социология</option><br>
+  </select><br>
+  Публикация:
+  <div class="radio"> <input type="radio" name="publication" value="1" class="public"> на сайте</div>
+  <div class="radio"><input type="radio" name="publication" value="1" class="public">в журнале</div>
+  <div class="radio"><input type="radio" name="publication" value="1" class="public">на сайте и в журнале<br></div>
+
+  Разрешить комментарии:
+  <input type="checkbox" checked name="comments" value="1"><br>
+  Текст статьи:<br>
+  <textarea name="text"> </textarea><br>
+  <input type="submit" value="Опубликовать">
+
+  </form>
+</body>
+</html>
