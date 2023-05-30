@@ -7,7 +7,7 @@
   <title>Document</title>
   <style>
  .str{
-    display: inline-block;
+    float: right;
     background-image: url("img/star0.png");
     width: 100px;
     height: 100px;
@@ -15,9 +15,14 @@
     
     }
     
-
-.str:hover{
+/* .str1~.str:hover{
+background-image:url("img/star1.png") ;
+} */
+.str:hover~.str{
  background-image: url("img/star1.png");
+}
+.str:hover{
+  background-image: url("img/star1.png");
 }
 
 
