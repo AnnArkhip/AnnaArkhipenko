@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    @keyframes MyAnimation2
+    {
+        from { background: url('SpriteEntity.png') 0 0; }
+        to { background: url('SpriteEntity.png') -830px 0; } /* 462-66=396 */
+    }
+    
+    #EX2
+    {
+        width: 99px;
+        height: 128px;
+        animation: MyAnimation2 1s steps(8) infinite;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id='EX2'></div>
+</body>
+</html>

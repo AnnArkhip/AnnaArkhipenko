@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    @keyframes MyAnimation1
+{
+    from { background-color: red; }
+    to { background-color: blue; }
+}
+.first
+{
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    animation: MyAnimation1 2s steps(5) infinite;
+   
+}
+@keyframes MyAnimation2
+{
+    from { font-size: 20px; }
+    to { font-size: 40px; }
+    from{color: aqua;}
+    to{color:mediumseagreen;}
+}
+.second{
+  padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: blueviolet;
+    color: white;
+    animation: MyAnimation2 5s steps(3);
+}
+@keyframes MyAnimation3
+{
+    from { width: 100vw; }
+    to { width: 300px; }
+    from{background-color: chocolate;}
+    to{background-color: cornflowerblue;}
+}
+.third{
+  padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color:darkgreen;
+    color: white;
+    animation: MyAnimation3 5s steps(10);
+}
+/* .all:hover{
+  animation: MyAnimation3 5s steps(10) infinite, MyAnimation2 5s steps(3) infinite;
+} */
+.all:hover>.second{
+  animation:MyAnimation2 5s steps(3) infinite;
+}
+.all:hover>.third{
+  animation: MyAnimation3 5s steps(10) infinite;
+}
+  </style>
+</head>
+<body>
+  <div class="all">
+    <p class="first">Если ты не любишь читать, ты просто еще не нашел подходящую книгу. Дж. К. Роулинг</p>
+    <p class="second"> — Ах, милая Глэдис, все пути ведут к одному.
+      — К чему же?
+      — К разочарованию.
+      Оскар Уайльд. Портрет Дориана Грея</p>
+      <p class="third">Успех — это неожиданное соединение таланта, счастья и труда, а иногда и недоразумения.
+
+        Цукмайер</p>
+  </div>
+</body>
+</html>
