@@ -8,25 +8,35 @@
 </head>
 <body>
   <script>
-var b=365;
-    var name=prompt('Введите вашу фамилию');
-    var name=prompt('Введите ваше имя');
-    var name=prompt('Введите ваше отчество');
+var b = 5;
+    var name1 = prompt('Введите вашу фамилию');
+    var name2 = prompt('Введите ваше имя');
+    var name3 = prompt('Введите ваше отчество');
 
-    var age=parseInt(prompt('Ваш возраст в годах'));
+    var age = parseInt(prompt('Ваш возраст в годах'));
 
-    var age5=alert(age+5);
 
-     var days=alert('age+b');
-    var gender=confirm('Вы женщина?');
-    if (gender=true)
-      alert('женский')
-    else ('мужской');
+    var gender = confirm('Вы женщина?');
 
-    var old=confirm('Вы на пенсии?');
-    if (old=true)
-      alert('Да')
-    else ('Нет');
+      alert('ваше фио:' + name1 + name2 + name3);
+      
+      alert('ваш возраст:' + age);
+      alert('ваш возраст в днях:' + age*365); 
+      alert('через 5 лет вам будет:' + age+b); 
+
+     if (gender=true)
+      ('ваш пол: женский')
+    else ('ваш пол: мужской');
+
+    if (age>63 && gender===false)
+      alert('вы на пенсии: да')
+    else ('вы на пенсии: нет');
+
+    if (age>58 && gender===true)
+    alert('вы на пенсии:нет')
+    else ('вы на пенсии: да');
+    
+
   </script>
 </body>
 </html>
