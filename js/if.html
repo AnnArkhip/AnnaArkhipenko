@@ -18,25 +18,29 @@
     
         var gender = confirm('Вы женщина?');
     
-          alert('ваше фио:' + name1 + name2 + name3);
-          
-          alert('ваш возраст:' + age);
-          alert('ваш возраст в днях:' + age*365); 
-          alert('через 5 лет вам будет:' + age+b); 
-    
+         
+    var t='pens';
          var gender=true?
-          alert('ваш пол: женский'):
-         ('ваш пол: мужской');
+          gender= 'женский':
+         gender= 'мужской';
     
         var t =(age>63 && gender===false) ?
-          alert('вы на пенсии: да'):
-         ('вы на пенсии: нет');
+          pens ='да':
+         pens= 'нет';;
     
        var t = (age>58 && gender===true)?
-        alert('вы на пенсии:нет'):
-         ('вы на пенсии: да');
-        
+        pens ='да':
+         pens= 'нет';
+
     
+
+alert ("ваше фио:" + name1  +  name2 + name3 + "\r\n" + 
+"ваш возраст:" + age + "\r\n" +
+"ваш возраст в днях:" + age*365 + "\r\n" +
+"через 5 лет вам будет:" + +Number(age+ b) + "\r\n" +
+"ваш пол:" + gender + "\r\n" +
+ "вы на пенсии:" + pens
+);
       </script>
 </body>
 </html>

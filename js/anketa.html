@@ -18,24 +18,28 @@ var b = 5;
 
     var gender = confirm('Вы женщина?');
 
-      alert('ваше фио:' + name1 + name2 + name3);
-      
-      alert('ваш возраст:' + age);
-      alert('ваш возраст в днях:' + age*365); 
-      alert('через 5 лет вам будет:' + age+b); 
 
-     if (gender=true)
-      ('ваш пол: женский')
-    else ('ваш пол: мужской');
 
-    if (age>63 && gender===false)
-      alert('вы на пенсии: да')
-    else ('вы на пенсии: нет');
+     if ( gender==false )
+      gender= 'мужской'
+    else gender= 'женский' ; 
 
-    if (age>58 && gender===true)
-    alert('вы на пенсии:нет')
-    else ('вы на пенсии: да');
+      if (age>63&&gender==false)
+      pens ='да'
+    else pens= 'нет';
+
+    if (age>58&&gender==true)
+    pens ='да'
+    else pens='нет';  
     
+
+alert ("ваше фио:" + name1  +  name2 + name3 + "\r\n" + 
+"ваш возраст:" + age + "\r\n" +
+"ваш возраст в днях:" + age*365 + "\r\n" +
+"через 5 лет вам будет:" + +Number(age+ b) + "\r\n" +
+"ваш пол:" + gender + "\r\n" +
+ "вы на пенсии:" + pens
+);
 
   </script>
 </body>
